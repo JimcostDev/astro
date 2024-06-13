@@ -5,7 +5,7 @@ interface Props {
     certification: string;
     link:          string;
 }
-export const prerender = false
+
 const {id, company, certification, link } = Astro.props
 const idStatus = id % 2 === 0 ? 'Par' : 'Impar'
 ---
