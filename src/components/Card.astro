@@ -1,0 +1,24 @@
+---
+interface Props {
+    id:            number;
+    company:       string;
+    certification: string;
+    link:          string;
+}
+export const prerender = false
+const {id, company, certification, link } = Astro.props
+const idStatus = id % 2 === 0 ? 'Par' : 'Impar'
+---
+
+<div class="flex flex-col items-center justify-between w-full py-4 px-2 rounded-md border-2 border-green-400">
+    <span class:list={[
+        "text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full uppercase tracking-wide text-center",
+        {
+            "bg-green-400 text-white": idStatus === 'Par',
+            "bg-green-200 text-green-400": idStatus === 'Impar'
+        }
+    ]}>{id}</span>
+    <h2 class="font-bold text-xl text-green-400 text-center">{company}</h1>
+    <p class="font-light text-white text-center my-2">{certification}</p>
+    <a class="text-green-400 hover:text-green-700 text-sm text-center" href={link}>Ver Certificación</a>
+</div>    
