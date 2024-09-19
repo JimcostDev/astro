@@ -7,7 +7,7 @@ const CertificationGrid = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://jimcostdev-api-jimcostdev.koyeb.app/certification/jimcostdev');
+        const response = await fetch('https://jimcostdev.koyeb.app/certification/jimcostdev');
         const data = await response.json();
         setData(data);
       } catch (error) {

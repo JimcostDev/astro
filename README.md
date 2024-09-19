@@ -16,7 +16,8 @@ npm install -g npm
 
 ## Actualizar versión:
 ```sh
-npm update astro
+npm update astro # opción 1
+npx @astrojs/upgrade # opción 2
 ```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
