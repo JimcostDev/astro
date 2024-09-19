@@ -3,6 +3,21 @@
 ```sh
 npm create astro@latest -- --template basics
 ```
+## Comprueba la versión
+```sh
+npx astro --version
+```
+
+## Actualiza globalmente npm (opcional)
+Si hace mucho que no actualizas npm, es recomendable hacerlo antes de actualizar Astro
+```sh
+npm install -g npm
+```
+
+## Actualizar versión:
+```sh
+npm update astro
+```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
